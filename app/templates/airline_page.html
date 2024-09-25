@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <main class="container airline-page">
+
+        <div class="row">
+            <div class="col-6">
+                <img src="{{ airline.image }}" class="airline-image" alt=""/>
+            </div>
+            <div class="col-6 d-flex flex-md-column gap-md-3">
+
+                <h1>{{ airline.name }}</h1>
+
+                <span>Описание: {{ airline.description }}</span>
+
+                <span>Дата основания: {{ airline.foundation_date }}</span>
+
+                <a href="/" class="btn btn-primary my-4 w-25">
+                    Домой
+                </a>
+
+            </div>
+        </div>
+
+    </main>
+{% endblock content %}

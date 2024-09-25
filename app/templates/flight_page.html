@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <main class="container">
+
+        <h3  class="text-center">Черновой перелет</h3>
+
+        <span>Откуда: {{ flight.from }}</span>
+        <span>Куда: {{ flight.to }}</span>
+        <span>Дата рейса: {{ flight.date }}</span>
+        <span>Код рейса: {{ flight.code }}</span>
+
+        <h4 class="text-center">Авиакомпании</h4>
+
+        <div class="cards-wrapper d-flex flex-column">
+
+            {% for airline in airlines %}
+
+                {% include "airline_card.html" %}
+
+            {% endfor %}
+
+        </div>
+
+    </main>
+{% endblock content %}
