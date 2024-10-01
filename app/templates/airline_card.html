@@ -1,0 +1,47 @@
+{% load static %}
+
+{% if "http://localhost:8000/flights/" in request.build_absolute_uri or "http://127.0.0.1:8000/flights/" in request.build_absolute_uri %}
+    <div class="card w-100 mb5">
+         <div class="row g-0">
+            <div class="col-md-6 d-flex justify-center">
+                <img src="{{ airline.image.url }}">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">{{ airline.name }}</h5>
+                    <p class="card-text">Дата основания: {{ airline.foundation_date }}</p>
+                    <div class="form-group">
+                        <label class="form-label">Количество мест на рейс</label>
+                        <input placeholder="Введите количество мест на рейс" disabled type="number" class="form-control" style="width: 350px" value={{ airline.value }}>
+                    </div>
+                    <a href="/airlines/{{ airline.id }}/" class="btn btn-primary" style="width: 100px">
+                        Открыть
+                    </a>
+                </div>
+            </div>
+         </div>
+    </div>
+{% else %}
+    <div class="card">
+        <img src="{{ airline.image.url }}" class="airline-preview" alt=""/>
+        <div class="card-body" >
+            <div class="card-info">
+                <h5 class="card-title">{{ airline.name }}</h5>
+                <p class="card-text">Дата основания: {{ airline.foundation_date }}</p>
+            </div>
+            <div class="row card-btns">
+                <div class="col d-flex justify-content-center flex-grow-1">
+                    <a href="/airlines/{{ airline.id }}" class="btn btn-primary">
+                        Открыть
+                    </a>
+                </div>
+                <form method="post" action="/airlines/{{ airline.id }}/add_to_flight/" class="col d-flex justify-content-center">
+                    {% csrf_token %}
+                    <button class="add-btn btn btn-secondary" type="submit">
+                        Добавить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endif %}

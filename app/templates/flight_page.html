@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <main class="container">
+
+        <h3  class="text-center">Черновой авиарейс</h3>
+
+        <span>Откуда: {{ flight.from_airport }}</span>
+        <span>Куда: {{ flight.to_airport }}</span>
+        <span>Дата рейса: {{ flight.date }}</span>
+        <span>Код рейса: {{ flight.code }}</span>
+
+        <form method="post" action="/flights/{{ flight.id }}/delete/">
+            {% csrf_token %}
+                <button class="btn btn-danger delete-draft-flight-btn" type="submit">
+                    Удалить
+                </button>
+            </a>
+        </form>
+
+        <h4 class="text-center">Авиакомпании</h4>
+
+        <div class="cards-wrapper d-flex flex-column">
+
+            {% for airline in flight.get_airlines %}
+
+                {% include "airline_card.html" %}
+
+            {% endfor %}
+
+        </div>
+
+    </main>
+{% endblock content %}
