@@ -11,7 +11,7 @@
 -   [Веб-сервис REST-API (лаб 3)](https://github.com/Valya2003/RIP_Backend/tree/DRF)
 -   [Аутентификация и авторизация (лаб 4)](https://github.com/Valya2003/RIP_Backend/tree/Auth)
 
-## [Фронтенд](https://github.com/rasulov1337/kilogram-frontend)
+## [Фронтенд](https://github.com/KKholodova/airlines_fronted)
 
 -   [SPA (лаб 5)](https://github.com/Valya2003/RIP_Frontend/tree/SPA)
 -   [Redux, адаптивность & PWA (лаб 6)](https://github.com/Valya2003/RIP_Frontend/tree/Redux)
