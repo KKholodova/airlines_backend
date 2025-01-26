@@ -6,10 +6,10 @@
 
 ## [Бэкенд](https://github.com/KKholodova/airlines_backend)
 
--   [SSR (лаб 1)](https://github.com/Valya2003/RIP_Backend/tree/SSR)
--   [База данных (лаб 2)](https://github.com/Valya2003/RIP_Backend/tree/ORM)
--   [Веб-сервис REST-API (лаб 3)](https://github.com/Valya2003/RIP_Backend/tree/DRF)
--   [Аутентификация и авторизация (лаб 4)](https://github.com/Valya2003/RIP_Backend/tree/Auth)
+-   [SSR (лаб 1)](https://github.com/KKholodova/airlines_backend/tree/SSR_1)
+-   [База данных (лаб 2)](https://github.com/KKholodova/airlines_backend/tree/ORM)
+-   [Веб-сервис REST-API (лаб 3)](https://github.com/KKholodova/airlines_backend/tree/REST-API)
+-   [Аутентификация и авторизация (лаб 4)](https://github.com/KKholodova/airlines_backend/tree/Moderator)
 
 ## [Фронтенд](https://github.com/KKholodova/airlines_fronted)
 
