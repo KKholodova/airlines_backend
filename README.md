@@ -4,7 +4,7 @@
 
 # Лабораторные
 
-## [Бэкенд](https://github.com/rasulov1337/kilogram-backend)
+## [Бэкенд](https://github.com/KKholodova/airlines_backend)
 
 -   [SSR (лаб 1)](https://github.com/Valya2003/RIP_Backend/tree/SSR)
 -   [База данных (лаб 2)](https://github.com/Valya2003/RIP_Backend/tree/ORM)
