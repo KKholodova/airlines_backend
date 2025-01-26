@@ -15,7 +15,7 @@
 
 -   [SPA (лаб 5)](https://github.com/KKholodova/airlines_fronted/tree/SPA)
 -   [Redux, адаптивность & PWA (лаб 6)](https://github.com/Valya2003/RIP_Frontend/tree/Redux)
--   [Tauri (лаб 6 )](https://github.com/Valya2003/RIP_Frontend/tree/Tauri)
--   [Github Pages (лаб 6)](https://github.com/Valya2003/RIP_Frontend/tree/gh-pages)
+-   [Tauri (лаб 6 )](https://github.com/KKholodova/airlines_fronted/tree/Tauri)
+-   [Github Pages (лаб 6)](https://github.com/KKholodova/airlines_fronted/tree/gh-pages)
 -   [Завершение интерфейса пользователя в React (лаб 7)](https://github.com/Valya2003/RIP_Frontend/tree/Auth)
 -   [Завершение интерфейса модератора в React (лаб 8)](https://github.com/Valya2003/RIP_Frontend/tree/Moderator)
